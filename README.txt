@@ -74,9 +74,9 @@ Below is a UML sequence diagram that illustrates the interaction between the cli
 scss
 Copy code
   Client                         Microservice
-    |                                 |
-    |--------(1. Request)------------>|
-    |                                 |
+    |           JSON Package          |
+    |--------(1. Request)------------>| --- Calculate needed calories with given metrics
+    |           Json Package          | --- Send needed calories 
     |<-------(2. Response)------------|
     |                                 |
 The client sends a request to the microservice by sending a JSON message containing the required data.
